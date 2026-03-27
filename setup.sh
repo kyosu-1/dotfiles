@@ -23,6 +23,11 @@ echo "==> Creating symlinks"
 # XDG config directories
 link "$DOTFILES/config/nvim"    "$XDG_CONFIG_HOME/nvim"
 link "$DOTFILES/config/ghostty" "$XDG_CONFIG_HOME/ghostty"
+# Cursor
+CURSOR_USER_DIR="$HOME/Library/Application Support/Cursor/User"
+mkdir -p "$CURSOR_USER_DIR"
+link "$DOTFILES/config/cursor/settings.json" "$CURSOR_USER_DIR/settings.json"
+
 # Starship
 link "$DOTFILES/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
 

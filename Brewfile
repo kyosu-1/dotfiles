@@ -3,6 +3,7 @@ cask "ghostty"
 
 # Editor
 brew "neovim"
+cask "cursor"
 
 # Shell tools
 brew "fzf"
