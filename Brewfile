@@ -21,6 +21,7 @@ brew "zoxide"    # cd
 
 # Languages
 brew "go"
+brew "n"          # Node.js version manager
 
 # Container
 cask "docker"     # Docker Desktop

@@ -30,6 +30,10 @@ for f in "$ZSHDIR"/aliases.zsh "$ZSHDIR"/functions.zsh; do
   [ -f "$f" ] && source "$f"
 done
 
+# ── n (Node.js) ──────────────────────────────────────
+export N_PREFIX="$HOME/.n"
+export PATH="$N_PREFIX/bin:$PATH"
+
 # ── Tools ─────────────────────────────────────────────
 # fzf
 [[ -f "${XDG_CONFIG_HOME}/fzf/fzf.zsh" ]] && source "${XDG_CONFIG_HOME}/fzf/fzf.zsh"
