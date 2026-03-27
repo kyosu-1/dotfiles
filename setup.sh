@@ -23,8 +23,6 @@ echo "==> Creating symlinks"
 # XDG config directories
 link "$DOTFILES/config/nvim"    "$XDG_CONFIG_HOME/nvim"
 link "$DOTFILES/config/ghostty" "$XDG_CONFIG_HOME/ghostty"
-link "$DOTFILES/config/git"     "$XDG_CONFIG_HOME/git"
-
 # Starship
 link "$DOTFILES/config/starship.toml" "$XDG_CONFIG_HOME/starship.toml"
 

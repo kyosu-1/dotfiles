@@ -16,7 +16,6 @@ dotfiles/
 ├── Makefile              # make install entrypoint
 ├── setup.sh              # Symlink creation
 ├── config/
-│   ├── git/              # Git config & global ignore
 │   ├── ghostty/          # Ghostty terminal
 │   ├── nvim/             # Neovim (lazy.nvim)
 │   ├── zsh/              # Shell config (split files)
