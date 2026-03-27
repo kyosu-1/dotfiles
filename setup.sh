@@ -37,4 +37,22 @@ link "$DOTFILES/config/zsh/.zshrc" "$HOME/.zshrc"
 # bin
 link "$DOTFILES/bin" "$HOME/.local/bin"
 
+# uv (Python)
+if ! command -v uv &>/dev/null; then
+  echo "==> Installing uv"
+  curl -LsSf https://astral.sh/uv/install.sh | sh
+else
+  echo "==> uv already installed"
+fi
+
+# Rust
+if ! command -v rustup &>/dev/null; then
+  echo "==> Installing rustup"
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+else
+  echo "==> rustup already installed"
+fi
+
 echo "==> Done"
+echo ""
+echo "Restart your shell or run: source ~/.zshrc"

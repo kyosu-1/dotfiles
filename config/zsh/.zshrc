@@ -46,3 +46,6 @@ fi
 if command -v starship &>/dev/null; then
   eval "$(starship init zsh)"
 fi
+
+. "$HOME/.local/share/../bin/env"
+. "$HOME/.cargo/env"

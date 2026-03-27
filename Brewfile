@@ -7,6 +7,7 @@ cask "cursor"
 
 # Shell tools
 brew "fzf"
+brew "gh"
 brew "ghq"
 brew "starship"
 brew "tmux"
@@ -17,6 +18,12 @@ brew "bat"       # cat
 brew "fd"        # find
 brew "ripgrep"   # grep
 brew "zoxide"    # cd
+
+# Languages
+brew "go"
+
+# Container
+cask "docker"     # Docker Desktop
 
 # Utilities
 brew "jq"
