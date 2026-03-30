@@ -26,6 +26,9 @@ brew "n"          # Node.js version manager
 # Container
 cask "docker"     # Docker Desktop
 
+# Cloud
+cask "google-cloud-sdk"
+
 # Utilities
 brew "jq"
 brew "lazygit"
